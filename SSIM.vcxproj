@@ -140,7 +140,6 @@
     <ClCompile Include="wavelet.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="convolution.h" />
     <ClInclude Include="cwt.h" />
     <ClInclude Include="ssim.h" />
     <ClInclude Include="wavelet.h" />

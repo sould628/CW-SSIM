@@ -98,8 +98,9 @@ namespace SSIM {
         //cv::pow(cwtMatr1, 2, c1_2);
         //cv::pow(cwtMatr2, 2, c2_2);
 
-        arma::mat c1_2 = arma::pow(cwtMat1, 2);
-        arma::mat c2_2 = arma::pow(cwtMat2, 2);
+        arma::mat c1_2 = cwtMat1 % cwtMat1;
+        arma::mat c2_2 = cwtMat2 % cwtMat2;
+
 
         BRIEF_PRINT(c1_2);
         BRIEF_PRINT(c2_2);
